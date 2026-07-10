@@ -90,6 +90,8 @@ Sprint 1 is currently in progress.
 
 ## Author
 
-Saranya D
+=======
+
+**Saranya D**
 
 Bluestock Data Engineering Internship
