@@ -90,6 +90,6 @@ Sprint 1 is currently in progress.
 
 ## Author
 
-**Thirunavukkarasu S**
+Saranya D
 
 Bluestock Data Engineering Internship
