@@ -3,75 +3,76 @@ company_rules.py
 
 Validation rules for companies.xlsx
 
-DQ-01 Company PK uniqueness
-DQ-08 Company ID format
-DQ-13 Website URL validation
+DQ-01 Primary Key
+DQ-08 Company ID Format
+DQ-13 URL Validation
 """
 
-from urllib.parse import urlparse
-
+import re
 import pandas as pd
 
 from src.etl.models import ValidationFailure
 
-
-def _valid_url(url: str) -> bool:
-    """
-    Returns True if URL looks valid.
-    """
-
-    if pd.isna(url):
-        return False
-
-    url = str(url).strip()
-
-    if url == "":
-        return False
-
-    parsed = urlparse(url)
-
-    return parsed.scheme in ("http", "https") and parsed.netloc != ""
+URL_PATTERN = re.compile(r"^https?://")
 
 
-def dq01_company_pk(df: pd.DataFrame):
+# -------------------------------------------------------
+# DQ-01
+# Company ID should be unique and not null
+# -------------------------------------------------------
+
+def dq01_company_pk(df: pd.DataFrame, dataset_name: str):
 
     failures = []
 
     if "id" not in df.columns:
         return failures
 
-    duplicate_rows = df[df["id"].duplicated(keep=False)]
-
-    for index, row in duplicate_rows.iterrows():
+    # Missing IDs
+    for index in df[df["id"].isna()].index:
 
         failures.append(
-
             ValidationFailure(
-
                 rule_id="DQ-01",
-
                 severity="CRITICAL",
-
-                dataset="companies",
-
+                dataset=dataset_name,
                 row_number=index + 2,
-
-                company_id=str(row["id"]),
-
+                company_id="",
+                year="",
                 column_name="id",
-
-                message="Duplicate Company Primary Key",
-
-                value=str(row["id"])
-
+                message="Company ID is missing",
+                value=""
             )
+        )
 
+    # Duplicate IDs
+    duplicates = df[df.duplicated("id", keep=False)]
+
+    for index, row in duplicates.iterrows():
+
+        failures.append(
+            ValidationFailure(
+                rule_id="DQ-01",
+                severity="CRITICAL",
+                dataset=dataset_name,
+                row_number=index + 2,
+                company_id=str(row["id"]),
+                year="",
+                column_name="id",
+                message="Duplicate Company ID",
+                value=str(row["id"])
+            )
         )
 
     return failures
 
 
-def dq08_company_id(df: pd.DataFrame):
+# -------------------------------------------------------
+# DQ-08
+# Company ID format
+# -------------------------------------------------------
+
+def dq08_company_id(df: pd.DataFrame, dataset_name: str):
 
     failures = []
 
@@ -82,47 +83,43 @@ def dq08_company_id(df: pd.DataFrame):
 
         company = str(row["id"]).strip()
 
-        if company != company.upper():
+        if company == "" or company.lower() == "nan":
+            continue
+
+        if not company.isupper():
 
             failures.append(
-
                 ValidationFailure(
-
                     rule_id="DQ-08",
-
-                    severity="CRITICAL",
-
-                    dataset="companies",
-
+                    severity="WARNING",
+                    dataset=dataset_name,
                     row_number=index + 2,
-
                     company_id=company,
-
+                    year="",
                     column_name="id",
-
                     message="Company ID should be uppercase",
-
                     value=company
-
                 )
-
             )
 
     return failures
 
 
-def dq13_company_urls(df: pd.DataFrame):
+# -------------------------------------------------------
+# DQ-13
+# Validate URL fields
+# -------------------------------------------------------
+
+def dq13_company_urls(df: pd.DataFrame, dataset_name: str):
 
     failures = []
 
     url_columns = [
-
         "website",
-
+        "chart_link",
         "nse_profile",
-
-        "bse_profile"
-
+        "bse_profile",
+        "company_logo"
     ]
 
     for column in url_columns:
@@ -132,35 +129,25 @@ def dq13_company_urls(df: pd.DataFrame):
 
         for index, row in df.iterrows():
 
-            value = row[column]
+            value = str(row[column]).strip()
 
-            if pd.isna(value):
+            if value == "" or value.lower() == "nan":
                 continue
 
-            if not _valid_url(value):
+            if not URL_PATTERN.match(value):
 
                 failures.append(
-
                     ValidationFailure(
-
                         rule_id="DQ-13",
-
                         severity="WARNING",
-
-                        dataset="companies",
-
+                        dataset=dataset_name,
                         row_number=index + 2,
-
                         company_id=str(row["id"]),
-
+                        year="",
                         column_name=column,
-
                         message="Invalid URL",
-
-                        value=str(value)
-
+                        value=value
                     )
-
                 )
 
     return failures
