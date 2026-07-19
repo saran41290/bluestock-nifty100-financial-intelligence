@@ -86,6 +86,20 @@ nifty100-platform/
 
 Sprint 1 is currently in progress.
 
+Sprint 1 ✅ Completed
+
+
+Sprint 2 ✅ Completed
+
+✔ 50+ Financial KPIs
+✔ CAGR Engine
+✔ Cashflow KPIs
+✔ Financial Ratio Engine
+✔ Composite Quality Score
+✔ SQLite Integration
+✔ Edge Case Logging
+✔ Unit Tested
+
 ---
 
 ## Author

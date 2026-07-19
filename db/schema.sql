@@ -213,3 +213,102 @@ ON documents(company_id);
 
 CREATE INDEX idx_pros_company
 ON prosandcons(company_id);
+
+-- Financial Ratio Engine
+-- Sprint 2
+
+CREATE TABLE IF NOT EXISTS financial_ratios (
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    company_id TEXT NOT NULL,
+
+    UNIQUE(company_id, year),
+
+    year TEXT NOT NULL,
+
+    
+    -- Profitability    
+
+    net_profit_margin_pct REAL,
+    operating_profit_margin_pct REAL,
+
+    return_on_equity_pct REAL,
+    return_on_assets_pct REAL,
+    return_on_capital_employed_pct REAL,
+
+    
+    -- Leverage    
+
+    debt_to_equity REAL,
+    interest_coverage REAL,
+
+    high_leverage_flag INTEGER DEFAULT 0,
+
+    icr_label TEXT,
+
+    
+    -- Efficiency    
+
+    asset_turnover REAL,
+
+    
+    -- Cash Flow    
+
+    free_cash_flow_label TEXT,
+
+    capex_label TEXT,
+
+    fcf_conversion_label TEXT,
+
+    cfo_quality_label TEXT,
+
+    capital_allocation TEXT,
+
+    cfo_quality_score REAL
+
+    
+    -- CAGR    
+
+    revenue_cagr_3yr REAL,
+    revenue_cagr_5yr REAL,
+    revenue_cagr_10yr REAL,
+
+    pat_cagr_3yr REAL,
+    pat_cagr_5yr REAL,
+    pat_cagr_10yr REAL,
+
+    eps_cagr_3yr REAL,
+    eps_cagr_5yr REAL,
+    eps_cagr_10yr REAL,
+
+    
+    -- Flags    
+
+    revenue_cagr_flag TEXT,
+
+    pat_cagr_flag TEXT,
+
+    eps_cagr_flag TEXT,
+
+    
+    -- Composite    
+
+    composite_quality_score REAL,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY(company_id) REFERENCES companies(id)
+
+);
+
+CREATE INDEX idx_ratio_company
+ON financial_ratios(company_id);
+
+CREATE INDEX idx_ratio_year
+ON financial_ratios(year);
+
+CREATE INDEX idx_ratio_company_year
+ON financial_ratios(company_id, year);
