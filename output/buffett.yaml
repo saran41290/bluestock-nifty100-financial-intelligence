@@ -1,0 +1,27 @@
+name: Buffett
+description: High quality companies with strong profitability and low debt.
+sort_by: composite_score
+ascending: false
+tags:
+- value
+- quality
+- long_term
+version: '1.0'
+author: Saranya
+enabled: true
+filters:
+- metric: return_on_equity_pct
+  operator: '>='
+  value: 20
+- metric: debt_to_equity
+  operator: <=
+  value: 0.5
+- metric: interest_coverage
+  operator: '>='
+  value: 5
+- metric: net_profit_margin_pct
+  operator: '>='
+  value: 15
+- metric: operating_profit_margin_pct
+  operator: '>='
+  value: 18
