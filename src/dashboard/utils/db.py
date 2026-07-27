@@ -1,0 +1,200 @@
+"""
+db.py
+
+Shared Data Loader for Streamlit Dashboard (Sprint 4 - Day 22)
+Applied @st.cache_data(ttl=600) to every query function.
+"""
+
+import sqlite3
+from pathlib import Path
+import pandas as pd
+import streamlit as st
+
+# Locate database and project root
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+DB_PATH = PROJECT_ROOT / "db" / "nifty100.db"
+SECTORS_PATH = PROJECT_ROOT / "supporting_datasets" / "sectors.xlsx"
+PEER_GROUPS_PATH = PROJECT_ROOT / "supporting_datasets" / "peer_groups.xlsx"
+MARKET_CAP_PATH = PROJECT_ROOT / "supporting_datasets" / "market_cap.xlsx"
+VALUATION_SUMMARY_PATH = PROJECT_ROOT / "output" / "valuation_summary.xlsx"
+
+
+def _get_connection():
+    return sqlite3.connect(DB_PATH)
+
+
+@st.cache_data(ttl=600)
+def get_companies() -> pd.DataFrame:
+    """
+    Returns DataFrame of all 92 companies merged with sector details.
+    """
+    conn = _get_connection()
+    companies_df = pd.read_sql_query("SELECT * FROM companies", conn)
+    conn.close()
+
+    if SECTORS_PATH.exists():
+        sectors_df = pd.read_excel(SECTORS_PATH)
+        df = pd.merge(companies_df, sectors_df[['company_id', 'broad_sector', 'sub_sector', 'index_weight_pct', 'market_cap_category']], left_on='id', right_on='company_id', how='left')
+        if 'company_id' in df.columns:
+            df.drop(columns=['company_id'], inplace=True)
+    else:
+        df = companies_df
+        df['broad_sector'] = 'Unassigned'
+        df['sub_sector'] = 'Unassigned'
+
+    return df
+
+
+@st.cache_data(ttl=600)
+def get_ratios(ticker: str = None, year: str = None) -> pd.DataFrame:
+    """
+    Returns financial ratios data, optionally filtered by ticker and/or year.
+    """
+    conn = _get_connection()
+    query = "SELECT * FROM financial_ratios"
+    conditions = []
+    params = []
+    if ticker:
+        conditions.append("company_id = ?")
+        params.append(ticker)
+    if year:
+        conditions.append("year = ?")
+        params.append(str(year))
+
+    if conditions:
+        query += " WHERE " + " AND ".join(conditions)
+
+    df = pd.read_sql_query(query, conn, params=params)
+    conn.close()
+
+    # Merge market_cap valuation multiples if available
+    if MARKET_CAP_PATH.exists():
+        mcap_df = pd.read_excel(MARKET_CAP_PATH)
+        mcap_df['year_str'] = mcap_df['year'].astype(str)
+        df['year_str'] = df['year'].astype(str)
+        df = pd.merge(df, mcap_df[['company_id', 'year_str', 'market_cap_crore', 'enterprise_value_crore', 'pe_ratio', 'pb_ratio', 'ev_ebitda', 'dividend_yield_pct']], on=['company_id', 'year_str'], how='left')
+
+    return df
+
+
+@st.cache_data(ttl=600)
+def get_pl(ticker: str = None) -> pd.DataFrame:
+    """
+    Returns Profit & Loss statement history.
+    """
+    conn = _get_connection()
+    if ticker:
+        query = "SELECT * FROM profitandloss WHERE company_id = ? ORDER BY year ASC"
+        df = pd.read_sql_query(query, conn, params=[ticker])
+    else:
+        query = "SELECT * FROM profitandloss ORDER BY company_id, year ASC"
+        df = pd.read_sql_query(query, conn)
+    conn.close()
+    return df
+
+
+@st.cache_data(ttl=600)
+def get_bs(ticker: str = None) -> pd.DataFrame:
+    """
+    Returns Balance Sheet history.
+    """
+    conn = _get_connection()
+    if ticker:
+        query = "SELECT * FROM balancesheet WHERE company_id = ? ORDER BY year ASC"
+        df = pd.read_sql_query(query, conn, params=[ticker])
+    else:
+        query = "SELECT * FROM balancesheet ORDER BY company_id, year ASC"
+        df = pd.read_sql_query(query, conn)
+    conn.close()
+    return df
+
+
+@st.cache_data(ttl=600)
+def get_cf(ticker: str = None) -> pd.DataFrame:
+    """
+    Returns Cash Flow statement history.
+    """
+    conn = _get_connection()
+    if ticker:
+        query = "SELECT * FROM cashflow WHERE company_id = ? ORDER BY year ASC"
+        df = pd.read_sql_query(query, conn, params=[ticker])
+    else:
+        query = "SELECT * FROM cashflow ORDER BY company_id, year ASC"
+        df = pd.read_sql_query(query, conn)
+    conn.close()
+    return df
+
+
+@st.cache_data(ttl=600)
+def get_sectors() -> pd.DataFrame:
+    """
+    Returns sector summary with company counts and list of sectors.
+    """
+    if SECTORS_PATH.exists():
+        df = pd.read_excel(SECTORS_PATH)
+        return df
+    else:
+        companies_df = get_companies()
+        return pd.DataFrame({
+            'company_id': companies_df['id'],
+            'broad_sector': companies_df.get('broad_sector', 'Unassigned'),
+            'sub_sector': companies_df.get('sub_sector', 'Unassigned')
+        })
+
+
+@st.cache_data(ttl=600)
+def get_peers(group_name: str = None) -> pd.DataFrame:
+    """
+    Returns peer group mapping and companies.
+    """
+    if PEER_GROUPS_PATH.exists():
+        df = pd.read_excel(PEER_GROUPS_PATH)
+        if group_name:
+            df = df[df['peer_group_name'] == group_name]
+        return df
+    return pd.DataFrame()
+
+
+@st.cache_data(ttl=600)
+def get_valuation(ticker: str = None) -> pd.DataFrame:
+    """
+    Returns valuation metrics and flags generated by valuation module.
+    """
+    if VALUATION_SUMMARY_PATH.exists():
+        df = pd.read_excel(VALUATION_SUMMARY_PATH)
+    else:
+        from src.analytics.valuation import ValuationEngine
+        engine = ValuationEngine(PROJECT_ROOT)
+        df, _ = engine.run()
+
+    if ticker:
+        df = df[df['company_id'] == ticker]
+    return df
+
+
+@st.cache_data(ttl=600)
+def get_documents(ticker: str = None) -> pd.DataFrame:
+    """
+    Returns annual report documents links.
+    """
+    conn = _get_connection()
+    if ticker:
+        df = pd.read_sql_query("SELECT * FROM documents WHERE company_id = ?", conn, params=[ticker])
+    else:
+        df = pd.read_sql_query("SELECT * FROM documents", conn)
+    conn.close()
+    return df
+
+
+@st.cache_data(ttl=600)
+def get_prosandcons(ticker: str = None) -> pd.DataFrame:
+    """
+    Returns pros and cons for companies.
+    """
+    conn = _get_connection()
+    if ticker:
+        df = pd.read_sql_query("SELECT * FROM prosandcons WHERE company_id = ?", conn, params=[ticker])
+    else:
+        df = pd.read_sql_query("SELECT * FROM prosandcons", conn)
+    conn.close()
+    return df
