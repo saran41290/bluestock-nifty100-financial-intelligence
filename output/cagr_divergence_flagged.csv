@@ -1,0 +1,2 @@
+company_id,metric_type,period_years,parsed_cagr_pct,computed_cagr_pct,divergence_pct,flagged_for_review
+INFY,compounded_sales_growth,3,5.0,15.22,10.22,True

@@ -34,6 +34,8 @@ logs/
 # Output
 output/*.csv
 output/*.xlsx
+*.patch
+output/*.patch
 
 # OS
 .DS_Store
