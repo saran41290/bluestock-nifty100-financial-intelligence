@@ -1,0 +1,48 @@
+company_id,previous_year,previous_pattern,latest_year,latest_pattern,change_summary
+ADANIENSOL,Mar 2023,Mixed,Mar 2024,Shareholder Returns,Moved from Mixed to Shareholder Returns
+ADANIENT,Mar 2023,Shareholder Returns,Mar 2024,Mixed,Moved from Shareholder Returns to Mixed
+ADANIGREEN,Mar 2023,Shareholder Returns,Mar 2024,Mixed,Moved from Shareholder Returns to Mixed
+ASIANPAINT,Mar 2023,Reinvestor,Mar 2024,Shareholder Returns,Moved from Reinvestor to Shareholder Returns
+AXISBANK,Mar 2023,Mixed,Mar 2024,Growth Funded by Debt,Moved from Mixed to Growth Funded by Debt
+BANKBARODA,Mar 2023,Pre-Revenue,Mar 2024,Growth Funded by Debt,Moved from Pre-Revenue to Growth Funded by Debt
+BEL,Mar 2023,Liquidating Assets,Mar 2024,Shareholder Returns,Moved from Liquidating Assets to Shareholder Returns
+BRITANNIA,Mar 2023,Shareholder Returns,Mar 2024,Liquidating Assets,Moved from Shareholder Returns to Liquidating Assets
+CANBK,Mar 2023,Growth Funded by Debt,Mar 2024,Reinvestor,Moved from Growth Funded by Debt to Reinvestor
+CIPLA,Mar 2023,Shareholder Returns,Mar 2024,Reinvestor,Moved from Shareholder Returns to Reinvestor
+COALINDIA,Mar 2023,Shareholder Returns,Mar 2024,Reinvestor,Moved from Shareholder Returns to Reinvestor
+DABUR,Mar 2023,Reinvestor,Mar 2024,Shareholder Returns,Moved from Reinvestor to Shareholder Returns
+DIVISLAB,Mar 2023,Shareholder Returns,Mar 2024,Reinvestor,Moved from Shareholder Returns to Reinvestor
+DLF,Mar 2023,Shareholder Returns,Mar 2024,Mixed,Moved from Shareholder Returns to Mixed
+DRREDDY,Mar 2023,Shareholder Returns,Mar 2024,Reinvestor,Moved from Shareholder Returns to Reinvestor
+GAIL,Mar 2023,Mixed,Mar 2024,Shareholder Returns,Moved from Mixed to Shareholder Returns
+GODREJCP,Mar 2023,Shareholder Returns,Mar 2024,Mixed,Moved from Shareholder Returns to Mixed
+HAVELLS,Mar 2023,Liquidating Assets,Mar 2024,Shareholder Returns,Moved from Liquidating Assets to Shareholder Returns
+HDFCBANK,Mar 2023,Mixed,Mar 2024,Liquidating Assets,Moved from Mixed to Liquidating Assets
+HDFCLIFE,Mar 2023,Mixed,Mar 2024,Shareholder Returns,Moved from Mixed to Shareholder Returns
+HEROMOTOCO,Mar 2023,Reinvestor,Mar 2024,Shareholder Returns,Moved from Reinvestor to Shareholder Returns
+HINDUNILVR,Mar 2023,Reinvestor,Mar 2024,Shareholder Returns,Moved from Reinvestor to Shareholder Returns
+ICICIBANK,Mar 2023,Growth Funded by Debt,Mar 2024,Mixed,Moved from Growth Funded by Debt to Mixed
+ICICIPRULI,Mar 2023,Reinvestor,Mar 2024,Mixed,Moved from Reinvestor to Mixed
+INDIGO,Mar 2023,Reinvestor,Mar 2024,Shareholder Returns,Moved from Reinvestor to Shareholder Returns
+INDUSINDBK,Mar 2023,Growth Funded by Debt,Mar 2024,Pre-Revenue,Moved from Growth Funded by Debt to Pre-Revenue
+IRFC,Mar 2023,Mixed,Mar 2024,Shareholder Returns,Moved from Mixed to Shareholder Returns
+ITC,Mar 2023,Reinvestor,Mar 2024,Liquidating Assets,Moved from Reinvestor to Liquidating Assets
+JINDALSTEL,Mar 2023,Shareholder Returns,Mar 2024,Mixed,Moved from Shareholder Returns to Mixed
+JIOFIN,Mar 2023,Shareholder Returns,Mar 2024,Mixed,Moved from Shareholder Returns to Mixed
+KOTAKBANK,Mar 2023,Growth Funded by Debt,Mar 2024,Mixed,Moved from Growth Funded by Debt to Mixed
+LICI,Mar 2023,Shareholder Returns,Mar 2024,Reinvestor,Moved from Shareholder Returns to Reinvestor
+LODHA,Mar 2023,Liquidating Assets,Mar 2024,Mixed,Moved from Liquidating Assets to Mixed
+LT,Mar 2023,Shareholder Returns,Mar 2024,Liquidating Assets,Moved from Shareholder Returns to Liquidating Assets
+LTIM,Mar 2023,Reinvestor,Mar 2024,Shareholder Returns,Moved from Reinvestor to Shareholder Returns
+MOTHERSON,Mar 2023,Shareholder Returns,Mar 2024,Mixed,Moved from Shareholder Returns to Mixed
+PNB,Mar 2023,Mixed,Mar 2024,Growth Funded by Debt,Moved from Mixed to Growth Funded by Debt
+RELIANCE,Mar 2023,Mixed,Mar 2024,Shareholder Returns,Moved from Mixed to Shareholder Returns
+SBIN,Mar 2023,Growth Funded by Debt,Mar 2024,Reinvestor,Moved from Growth Funded by Debt to Reinvestor
+SHRIRAMFIN,Mar 2023,Distress Signal,Mar 2024,Growth Funded by Debt,Moved from Distress Signal to Growth Funded by Debt
+SUNPHARMA,Mar 2023,Mixed,Mar 2024,Shareholder Returns,Moved from Mixed to Shareholder Returns
+TATACONSUM,Mar 2023,Shareholder Returns,Mar 2024,Mixed,Moved from Shareholder Returns to Mixed
+TATAPOWER,Mar 2023,Mixed,Mar 2024,Shareholder Returns,Moved from Mixed to Shareholder Returns
+TATASTEEL,Mar 2023,Shareholder Returns,Mar 2024,Reinvestor,Moved from Shareholder Returns to Reinvestor
+TITAN,Mar 2023,Mixed,Mar 2024,Reinvestor,Moved from Mixed to Reinvestor
+TORNTPHARM,Mar 2023,Mixed,Mar 2024,Shareholder Returns,Moved from Mixed to Shareholder Returns
+TRENT,Mar 2023,Shareholder Returns,Mar 2024,Reinvestor,Moved from Shareholder Returns to Reinvestor
