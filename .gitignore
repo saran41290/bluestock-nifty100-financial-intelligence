@@ -43,3 +43,8 @@ Thumbs.db
 
 # documentation
 Nifty100_Project_Document_FINAL.pdf
+
+# Scratch & Temporary
+scratch/
+reports/radar_charts/
+screenshots/
