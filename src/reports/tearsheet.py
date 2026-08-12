@@ -167,7 +167,7 @@ class TearsheetGenerator:
         conn.close()
 
         # Check data sufficiency (<3 years skipped)
-        if len(pnl) < 3 or len(bs) < 3:
+        if len(pnl) < 3:
             return None
 
         # Pros & Cons

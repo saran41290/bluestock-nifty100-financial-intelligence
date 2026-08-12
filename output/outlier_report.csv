@@ -1,0 +1,13 @@
+company_id,company_name,broad_sector,metric,value,sector_mean,sector_std,z_score
+INDIGO,Interglobe Aviation Ltd,Consumer Discretionary,return_on_equity_pct,100.0,30.11,21.15,3.3
+PNB,Punjab National Bank,Financials,return_on_equity_pct,61.32,18.86,12.46,3.41
+INDIGO,Interglobe Aviation Ltd,Consumer Discretionary,return_on_capital_employed_pct,5890.45,456.87,1507.55,3.6
+ICICIPRULI,ICICI Prudential Life Insurance Company Ltd,Financials,return_on_capital_employed_pct,779.24,82.95,208.11,3.35
+ADANIGREEN,Adani Green Energy Ltd,Energy,debt_to_equity,6.6,1.49,1.56,3.28
+BAJAJHLDNG,Bajaj Holdings & Investment Ltd,Financials,interest_coverage,3764.5,366.03,948.41,3.58
+BAJAJHLDNG,Bajaj Holdings & Investment Ltd,Financials,net_profit_margin_pct,432.73,39.26,87.57,4.49
+INDIGO,Interglobe Aviation Ltd,Consumer Discretionary,cfo_quality_score,-3.21,0.87,1.25,-3.26
+TATAPOWER,"Tata Power Company Ltd
+",Energy,cfo_quality_score,51.62,5.85,13.35,3.43
+INDIGO,Interglobe Aviation Ltd,Consumer Discretionary,asset_turnover,56.39,5.16,14.22,3.6
+PNB,Punjab National Bank,Financials,asset_turnover,1.51,0.2,0.3,4.33
