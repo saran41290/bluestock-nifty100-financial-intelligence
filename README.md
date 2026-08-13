@@ -161,11 +161,24 @@ nifty100-platform/
 
 ---
 
-## 📝 Sprint 4 Retrospective & Technical Findings
+### 🔹 Sprint 6 — API Server, Clustering & Quality Assurance (Days 36–44)
+*Focus: KMeans Clustering Archetypes, FastAPI REST Server (16 Endpoints), Comprehensive Test Suite, & Performance Benchmarking*
 
-- **Data Caching Efficiency**: Applied `@st.cache_data(ttl=600)` across SQLite data loaders in `db.py`. Company profile screen load time measured **< 0.5s** per ticker.
-- **Robust Error Handling**: Handled companies with partial financial history gracefully without crashing, displaying clean `N/A` fallbacks.
-- **Cross-Directory Compatibility**: Implemented robust `sys.path` resolution ensuring seamless dashboard execution regardless of launcher directory.
+- **KMeans Clustering & Profiling (`src/analytics/clustering.py`)**:
+  - Implemented 5 financial archetype clusters using `StandardScaler` + `KMeans(n_clusters=5, random_state=42)` across 92 companies.
+  - Exported `output/cluster_labels.csv`, `reports/elbow_plot.png` (confirming k=5 elbow), `reports/correlation_heatmap.png`, `output/outlier_report.csv`, and `output/portfolio_stats.csv`.
+- **FastAPI REST API Server (`src/api/main.py`)**:
+  - Built 16 REST endpoints across 8 domain routers (`/companies`, `/screener`, `/sectors`, `/peers`, `/valuation`, `/portfolio`, `/documents`, `/health`).
+  - Auto-generated OpenAPI spec (`docs/openapi.json`) and exported Postman collection (`docs/postman_collection.json`).
+- **Comprehensive Unit & API Test Suite (`tests/`)**:
+  - Built 121 unit and integration tests across ETL normalization (`tests/etl/`), loader, DQ rules (`tests/dq/`), KPI formulas (`tests/kpi/`), and API endpoints (`tests/api/`).
+  - **100% Pass Rate** (121 passed, 0 failures). Generated HTML test report `reports/pytest_report.html`.
+- **Performance & Integration Benchmarking (`output/perf_notes.md`)**:
+  - **10 Concurrent API Screener Load Test**: Completed in **0.42s** (target < 10s).
+  - **Dashboard Load Latency**: **< 0.35s** per ticker across 5 sampled companies.
+  - **SQLite Index Optimization**: Created composite indexes on `(company_id, year)` across P&L, Balance Sheet, Cash Flow, and Ratios tables.
+- **Analyst User Guide (`docs/analyst_guide.pdf`)**:
+  - Generated 10-page ReportLab user guide covering dashboard navigation, screener strategies, PDF tearsheet generation, API curl examples, and troubleshooting.
 
 ---
 
@@ -173,3 +186,4 @@ nifty100-platform/
 
 **Saranya D**  
 *Bluestock Data Engineering Internship*  
+

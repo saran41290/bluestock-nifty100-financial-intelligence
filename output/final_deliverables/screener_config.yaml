@@ -1,0 +1,25 @@
+filters:
+
+  - metric: return_on_equity_pct
+    operator: ">="
+    value: 15
+
+  - metric: debt_to_equity
+    operator: "<="
+    value: 1
+
+  - metric: interest_coverage
+    operator: ">="
+    value: 3
+
+  - metric: net_profit_margin_pct
+    operator: ">="
+    value: 10
+
+  - metric: operating_profit_margin_pct
+    operator: ">="
+    value: 15
+
+sort_by: composite_score
+
+ascending: false

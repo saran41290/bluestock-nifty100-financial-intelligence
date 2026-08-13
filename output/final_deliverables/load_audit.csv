@@ -1,0 +1,8 @@
+table,rows_loaded,total_rows,status
+companies,92,92,PASS
+analysis,16,16,PASS
+documents,1457,1457,PASS
+prosandcons,14,14,PASS
+profitandloss,1164,1164,PASS
+balancesheet,1227,1227,PASS
+cashflow,1091,1091,PASS

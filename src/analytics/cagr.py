@@ -50,10 +50,15 @@ class CAGRResult:
 
 class CAGRCalculator:
 
+    @staticmethod
+    def calculate_cagr(start_val: float, end_val: float, periods: int) -> CAGRResult:
+        return CAGRCalculator.calculate(start_val, end_val, periods)
+
     # ------------------------------------------------------
 
     @staticmethod
     def round2(value):
+
 
         if value is None:
 
@@ -318,3 +323,6 @@ class CAGRCalculator:
             result[item[0] + "_flag"] = item[1].flag
 
         return result
+
+
+CAGREngine = CAGRCalculator

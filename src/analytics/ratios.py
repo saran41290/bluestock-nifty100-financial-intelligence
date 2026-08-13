@@ -353,10 +353,15 @@ class FinancialRatioCalculator:
             flag=flag
         )
 
+    @staticmethod
+    def interest_coverage(operating_profit, other_income, interest) -> RatioResult:
+        return FinancialRatioCalculator.interest_coverage_ratio(operating_profit, other_income, interest)
+
     # ------------------------------------------------------
 
     @staticmethod
     def interest_coverage_ratio(
+
         operating_profit,
         other_income,
         interest,

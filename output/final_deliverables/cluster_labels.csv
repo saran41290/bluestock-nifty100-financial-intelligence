@@ -1,0 +1,93 @@
+company_id,cluster_id,cluster_name,distance_from_centroid
+ABB,2,Emerging Growth,0.8734
+ADANIENSOL,2,Emerging Growth,1.181
+ADANIENT,3,Value Cyclicals & Turnaround,1.6752
+ADANIGREEN,1,High-Leverage Financials,2.4763
+ADANIPORTS,4,High-Margin Defensive,1.2855
+ADANIPOWER,2,Emerging Growth,1.3472
+AMBUJACEM,3,Value Cyclicals & Turnaround,0.9405
+APOLLOHOSP,3,Value Cyclicals & Turnaround,0.7465
+ASIANPAINT,3,Value Cyclicals & Turnaround,1.0039
+ATGL,2,Emerging Growth,0.9531
+AXISBANK,1,High-Leverage Financials,1.5629
+BAJAJ-AUTO,3,Value Cyclicals & Turnaround,0.8179
+BAJAJFINSV,1,High-Leverage Financials,1.074
+BAJAJHLDNG,4,High-Margin Defensive,2.5181
+BAJFINANCE,1,High-Leverage Financials,1.5565
+BANKBARODA,1,High-Leverage Financials,2.1796
+BEL,0,High-Quality Compounders,1.9698
+BHARTIARTL,2,Emerging Growth,1.4072
+BHEL,3,Value Cyclicals & Turnaround,2.2022
+BOSCHLTD,3,Value Cyclicals & Turnaround,1.1819
+BPCL,2,Emerging Growth,1.1563
+BRITANNIA,0,High-Quality Compounders,1.6075
+CANBK,1,High-Leverage Financials,2.9246
+CHOLAFIN,1,High-Leverage Financials,0.8006
+CIPLA,4,High-Margin Defensive,0.9934
+COALINDIA,4,High-Margin Defensive,1.7985
+DABUR,3,Value Cyclicals & Turnaround,0.4654
+DIVISLAB,3,Value Cyclicals & Turnaround,0.5111
+DLF,3,Value Cyclicals & Turnaround,2.1904
+DMART,2,Emerging Growth,1.1606
+DRREDDY,3,Value Cyclicals & Turnaround,0.6907
+EICHERMOT,2,Emerging Growth,0.7562
+GAIL,2,Emerging Growth,2.4351
+GODREJCP,3,Value Cyclicals & Turnaround,1.3647
+GRASIM,3,Value Cyclicals & Turnaround,1.007
+HAL,0,High-Quality Compounders,1.356
+HAVELLS,3,Value Cyclicals & Turnaround,0.757
+HCLTECH,2,Emerging Growth,0.5371
+HDFCBANK,1,High-Leverage Financials,1.385
+HDFCLIFE,4,High-Margin Defensive,1.2635
+HEROMOTOCO,4,High-Margin Defensive,1.6423
+HINDALCO,4,High-Margin Defensive,0.5841
+HINDUNILVR,4,High-Margin Defensive,0.7697
+ICICIBANK,1,High-Leverage Financials,0.9096
+ICICIGI,4,High-Margin Defensive,1.288
+ICICIPRULI,4,High-Margin Defensive,1.3792
+INDIGO,0,High-Quality Compounders,2.213
+INDUSINDBK,1,High-Leverage Financials,0.6744
+INFY,3,Value Cyclicals & Turnaround,0.9917
+IOC,2,Emerging Growth,1.062
+IRCTC,2,Emerging Growth,1.4531
+IRFC,1,High-Leverage Financials,2.3532
+ITC,3,Value Cyclicals & Turnaround,1.2349
+JINDALSTEL,3,Value Cyclicals & Turnaround,1.4531
+JIOFIN,4,High-Margin Defensive,0.9719
+JSWENERGY,3,Value Cyclicals & Turnaround,1.6091
+JSWSTEEL,3,Value Cyclicals & Turnaround,0.9394
+KOTAKBANK,4,High-Margin Defensive,1.3877
+LICI,3,Value Cyclicals & Turnaround,1.8849
+LODHA,3,Value Cyclicals & Turnaround,1.9789
+LT,0,High-Quality Compounders,1.1017
+LTIM,2,Emerging Growth,2.4767
+M&M,3,Value Cyclicals & Turnaround,0.7601
+MARUTI,3,Value Cyclicals & Turnaround,0.7044
+MOTHERSON,3,Value Cyclicals & Turnaround,0.5028
+NAUKRI,3,Value Cyclicals & Turnaround,1.5498
+NESTLEIND,0,High-Quality Compounders,1.1302
+NHPC,2,Emerging Growth,3.6854
+NTPC,2,Emerging Growth,0.6738
+ONGC,3,Value Cyclicals & Turnaround,0.9199
+PFC,1,High-Leverage Financials,1.3651
+PIDILITIND,3,Value Cyclicals & Turnaround,0.4873
+PNB,0,High-Quality Compounders,1.6168
+POWERGRID,4,High-Margin Defensive,1.1433
+RECLTD,4,High-Margin Defensive,2.0208
+RELIANCE,3,Value Cyclicals & Turnaround,0.7719
+SBILIFE,3,Value Cyclicals & Turnaround,2.3251
+SBIN,1,High-Leverage Financials,1.1071
+SHREECEM,2,Emerging Growth,0.9679
+SHRIRAMFIN,1,High-Leverage Financials,1.3701
+SIEMENS,3,Value Cyclicals & Turnaround,0.2802
+SUNPHARMA,3,Value Cyclicals & Turnaround,0.9642
+TATACONSUM,3,Value Cyclicals & Turnaround,1.2121
+TATAMOTORS,2,Emerging Growth,1.2383
+TATAPOWER,3,Value Cyclicals & Turnaround,0.9066
+TATASTEEL,3,Value Cyclicals & Turnaround,1.1188
+TCS,0,High-Quality Compounders,1.479
+TECHM,3,Value Cyclicals & Turnaround,0.623
+TITAN,2,Emerging Growth,1.2572
+TORNTPHARM,3,Value Cyclicals & Turnaround,1.0163
+TRENT,2,Emerging Growth,3.0861
+TVSMOTOR,3,Value Cyclicals & Turnaround,1.4726

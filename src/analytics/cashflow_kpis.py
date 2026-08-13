@@ -90,6 +90,41 @@ class CashflowKPICalculator:
         label = "POSITIVE_FCF" if fcf > 0 else ("NEGATIVE_FCF" if fcf < 0 else "ZERO_FCF")
         return CashflowResult(value=CashflowKPICalculator._round(fcf), label=label)
 
+    @staticmethod
+    def calculate_all(operating_activity=0, investing_activity=0, financing_activity=0, operating_profit=0, sales=0, cfo_history=None, pat_history=None):
+        fcf_res = CashflowKPICalculator.free_cash_flow(operating_activity, investing_activity)
+        cfo_qual = CashflowKPICalculator.cfo_quality_score(cfo_history or [], pat_history or [])
+        capex_res = CashflowKPICalculator.capex_intensity(investing_activity, sales)
+        conv_res = CashflowKPICalculator.fcf_conversion(fcf_res.value or 0, operating_profit)
+        alloc_res = CashflowKPICalculator.capital_allocation_pattern(operating_activity, investing_activity, financing_activity)
+        return {
+            "free_cash_flow": fcf_res.value,
+            "free_cash_flow_label": fcf_res.label,
+            "cfo_quality_score": cfo_qual.value,
+            "cfo_quality_label": cfo_qual.label,
+            "capex_intensity": capex_res.value,
+            "capex_label": capex_res.label,
+            "fcf_conversion": conv_res.value,
+            "fcf_conversion_label": conv_res.label,
+            "capital_allocation": alloc_res.label,
+        }
+
+    @staticmethod
+    def capital_allocation_record(company_id, year, operating_activity, investing_activity, financing_activity, pattern_label=None):
+        cfo_sign = CashflowKPICalculator._cashflow_sign(operating_activity)
+        cfi_sign = CashflowKPICalculator._cashflow_sign(investing_activity)
+        cff_sign = CashflowKPICalculator._cashflow_sign(financing_activity)
+        pat = pattern_label or CashflowKPICalculator.capital_allocation_pattern(operating_activity, investing_activity, financing_activity).label
+        return {
+            "company_id": company_id,
+            "year": year,
+            "cfo_sign": cfo_sign,
+            "cfi_sign": cfi_sign,
+            "cff_sign": cff_sign,
+            "pattern_label": pat
+        }
+
+
     # ======================================================
     # CFO QUALITY SCORE
     # ======================================================
@@ -113,9 +148,10 @@ class CashflowKPICalculator:
                 ratios.append(cfo_val / pat_val)
 
         if not ratios:
-            return CashflowResult(value=0.0, flag="NO_POSITIVE_PAT", label="Accrual Risk")
+            return CashflowResult(value=None, flag="NO_POSITIVE_PAT", label="Accrual Risk")
 
         average = sum(ratios) / len(ratios)
+
 
         label = "Accrual Risk"
         if average > 1.0:
@@ -239,7 +275,11 @@ class CashflowKPICalculator:
         return CashflowResult(value=None, label=label)
 
 
+CashFlowKPIEngine = CashflowKPICalculator
+
+
 # ==========================================================
+
 # BATCH GENERATOR FOR SPRINT 5
 # ==========================================================
 

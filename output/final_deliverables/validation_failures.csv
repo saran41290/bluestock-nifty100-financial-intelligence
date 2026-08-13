@@ -1,0 +1,370 @@
+rule_id,severity,dataset,row_number,company_id,year,column_name,message,value
+DQ-02,CRITICAL,profitandloss,49,ADANIPORTS,Mar 2013,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2013
+DQ-02,CRITICAL,profitandloss,50,ADANIPORTS,Mar 2014,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2014
+DQ-02,CRITICAL,profitandloss,51,ADANIPORTS,Mar 2015,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2015
+DQ-02,CRITICAL,profitandloss,52,ADANIPORTS,Mar 2016,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2016
+DQ-02,CRITICAL,profitandloss,53,ADANIPORTS,Mar 2017,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2017
+DQ-02,CRITICAL,profitandloss,54,ADANIPORTS,Mar 2018,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2018
+DQ-02,CRITICAL,profitandloss,55,ADANIPORTS,Mar 2019,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2019
+DQ-02,CRITICAL,profitandloss,56,ADANIPORTS,Mar 2020,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2020
+DQ-02,CRITICAL,profitandloss,57,ADANIPORTS,Mar 2021,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2021
+DQ-02,CRITICAL,profitandloss,58,ADANIPORTS,Mar 2022,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2022
+DQ-02,CRITICAL,profitandloss,59,ADANIPORTS,Mar 2023,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2023
+DQ-02,CRITICAL,profitandloss,60,ADANIPORTS,Mar 2024,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2024
+DQ-02,CRITICAL,profitandloss,61,ADANIPORTS,TTM,"company_id,year",Duplicate Company-Year record,ADANIPORTS-TTM
+DQ-02,CRITICAL,profitandloss,62,ADANIPORTS,Mar 2013,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2013
+DQ-02,CRITICAL,profitandloss,63,ADANIPORTS,Mar 2014,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2014
+DQ-02,CRITICAL,profitandloss,64,ADANIPORTS,Mar 2015,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2015
+DQ-02,CRITICAL,profitandloss,65,ADANIPORTS,Mar 2016,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2016
+DQ-02,CRITICAL,profitandloss,66,ADANIPORTS,Mar 2017,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2017
+DQ-02,CRITICAL,profitandloss,67,ADANIPORTS,Mar 2018,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2018
+DQ-02,CRITICAL,profitandloss,68,ADANIPORTS,Mar 2019,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2019
+DQ-02,CRITICAL,profitandloss,69,ADANIPORTS,Mar 2020,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2020
+DQ-02,CRITICAL,profitandloss,70,ADANIPORTS,Mar 2021,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2021
+DQ-02,CRITICAL,profitandloss,71,ADANIPORTS,Mar 2022,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2022
+DQ-02,CRITICAL,profitandloss,72,ADANIPORTS,Mar 2023,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2023
+DQ-02,CRITICAL,profitandloss,73,ADANIPORTS,Mar 2024,"company_id,year",Duplicate Company-Year record,ADANIPORTS-Mar 2024
+DQ-02,CRITICAL,profitandloss,74,ADANIPORTS,TTM,"company_id,year",Duplicate Company-Year record,ADANIPORTS-TTM
+DQ-15,INFO,balancesheet,233,BHARTIARTL,Mar 2024,total_liabilities,Total liabilities do not match calculated value,"Expected=442619.0, Actual=442019.0"
+DQ-15,INFO,balancesheet,500,HDFCBANK,Mar 2022,total_liabilities,Total liabilities do not match calculated value,"Expected=2122936.0, Actual=2122934.0"
+DQ-15,INFO,balancesheet,591,ICICIPRULI,Sep 2024,total_liabilities,Total liabilities do not match calculated value,"Expected=325637.0, Actual=326838.0"
+DQ-15,INFO,balancesheet,812,LODHA,Mar 2015,total_liabilities,Total liabilities do not match calculated value,"Expected=27898.0, Actual=27998.0"
+DQ-15,INFO,balancesheet,819,LODHA,Mar 2022,total_liabilities,Total liabilities do not match calculated value,"Expected=38406.0, Actual=38404.0"
+DQ-15,INFO,balancesheet,1288,TATAPOWER,Mar 2013,total_liabilities,Total liabilities do not match calculated value,"Expected=67255.0, Actual=67257.0"
+DQ-15,INFO,balancesheet,1176,TVSMOTOR,Mar 2018,total_liabilities,Total liabilities do not match calculated value,"Expected=13192.0, Actual=13190.0"
+DQ-05,WARNING,profitandloss,25,ADANIENSOL,Mar 2024,opm_percentage,OPM mismatch,Expected 34.39
+DQ-05,WARNING,profitandloss,148,AXISBANK,Mar 2013,opm_percentage,OPM mismatch,Expected 30.58
+DQ-05,WARNING,profitandloss,149,AXISBANK,Mar 2014,opm_percentage,OPM mismatch,Expected 31.47
+DQ-05,WARNING,profitandloss,150,AXISBANK,Mar 2015,opm_percentage,OPM mismatch,Expected 31.36
+DQ-05,WARNING,profitandloss,151,AXISBANK,Mar 2016,opm_percentage,OPM mismatch,Expected 32.61
+DQ-05,WARNING,profitandloss,152,AXISBANK,Mar 2017,opm_percentage,OPM mismatch,Expected 53.45
+DQ-05,WARNING,profitandloss,153,AXISBANK,Mar 2018,opm_percentage,OPM mismatch,Expected 63.12
+DQ-05,WARNING,profitandloss,154,AXISBANK,Mar 2019,opm_percentage,OPM mismatch,Expected 49.39
+DQ-05,WARNING,profitandloss,155,AXISBANK,Mar 2020,opm_percentage,OPM mismatch,Expected 55.98
+DQ-05,WARNING,profitandloss,156,AXISBANK,Mar 2021,opm_percentage,OPM mismatch,Expected 50.12
+DQ-05,WARNING,profitandloss,157,AXISBANK,Mar 2022,opm_percentage,OPM mismatch,Expected 44.47
+DQ-05,WARNING,profitandloss,158,AXISBANK,Mar 2023,opm_percentage,OPM mismatch,Expected 34.16
+DQ-05,WARNING,profitandloss,159,AXISBANK,Mar 2024,opm_percentage,OPM mismatch,Expected 34.69
+DQ-05,WARNING,profitandloss,160,AXISBANK,TTM,opm_percentage,OPM mismatch,Expected 36.94
+DQ-05,WARNING,profitandloss,187,BAJFINANCE,Mar 2015,opm_percentage,OPM mismatch,Expected 32.49
+DQ-05,WARNING,profitandloss,188,BAJFINANCE,Mar 2016,opm_percentage,OPM mismatch,Expected 32.25
+DQ-05,WARNING,profitandloss,189,BAJFINANCE,Mar 2017,opm_percentage,OPM mismatch,Expected 32.60
+DQ-05,WARNING,profitandloss,190,BAJFINANCE,Mar 2018,opm_percentage,OPM mismatch,Expected 32.28
+DQ-05,WARNING,profitandloss,191,BAJFINANCE,Mar 2019,opm_percentage,OPM mismatch,Expected 29.50
+DQ-05,WARNING,profitandloss,192,BAJFINANCE,Mar 2020,opm_percentage,OPM mismatch,Expected 34.73
+DQ-05,WARNING,profitandloss,193,BAJFINANCE,Mar 2021,opm_percentage,OPM mismatch,Expected 40.64
+DQ-05,WARNING,profitandloss,194,BAJFINANCE,Mar 2022,opm_percentage,OPM mismatch,Expected 37.55
+DQ-05,WARNING,profitandloss,195,BAJFINANCE,Mar 2023,opm_percentage,OPM mismatch,Expected 30.65
+DQ-05,WARNING,profitandloss,196,BAJFINANCE,Mar 2024,opm_percentage,OPM mismatch,Expected 29.29
+DQ-05,WARNING,profitandloss,197,BAJFINANCE,TTM,opm_percentage,OPM mismatch,Expected 30.42
+DQ-05,WARNING,profitandloss,198,BANKBARODA,Mar 2013,opm_percentage,OPM mismatch,Expected 30.05
+DQ-05,WARNING,profitandloss,199,BANKBARODA,Mar 2014,opm_percentage,OPM mismatch,Expected 29.78
+DQ-05,WARNING,profitandloss,200,BANKBARODA,Mar 2015,opm_percentage,OPM mismatch,Expected 29.98
+DQ-05,WARNING,profitandloss,201,BANKBARODA,Mar 2016,opm_percentage,OPM mismatch,Expected 55.44
+DQ-05,WARNING,profitandloss,202,BANKBARODA,Mar 2017,opm_percentage,OPM mismatch,Expected 43.28
+DQ-05,WARNING,profitandloss,203,BANKBARODA,Mar 2018,opm_percentage,OPM mismatch,Expected 56.65
+DQ-05,WARNING,profitandloss,204,BANKBARODA,Mar 2019,opm_percentage,OPM mismatch,Expected 48.79
+DQ-05,WARNING,profitandloss,205,BANKBARODA,Mar 2020,opm_percentage,OPM mismatch,Expected 51.44
+DQ-05,WARNING,profitandloss,206,BANKBARODA,Mar 2021,opm_percentage,OPM mismatch,Expected 51.23
+DQ-05,WARNING,profitandloss,207,BANKBARODA,Mar 2022,opm_percentage,OPM mismatch,Expected 51.12
+DQ-05,WARNING,profitandloss,208,BANKBARODA,Mar 2023,opm_percentage,OPM mismatch,Expected 40.45
+DQ-05,WARNING,profitandloss,209,BANKBARODA,Mar 2024,opm_percentage,OPM mismatch,Expected 37.49
+DQ-05,WARNING,profitandloss,210,BANKBARODA,TTM,opm_percentage,OPM mismatch,Expected 37.42
+DQ-05,WARNING,profitandloss,289,CANBK,Mar 2013,opm_percentage,OPM mismatch,Expected 21.18
+DQ-05,WARNING,profitandloss,290,CANBK,Mar 2014,opm_percentage,OPM mismatch,Expected 24.35
+DQ-05,WARNING,profitandloss,291,CANBK,Mar 2015,opm_percentage,OPM mismatch,Expected 23.51
+DQ-05,WARNING,profitandloss,292,CANBK,Mar 2016,opm_percentage,OPM mismatch,Expected 40.38
+DQ-05,WARNING,profitandloss,293,CANBK,Mar 2017,opm_percentage,OPM mismatch,Expected 37.85
+DQ-05,WARNING,profitandloss,294,CANBK,Mar 2018,opm_percentage,OPM mismatch,Expected 61.87
+DQ-05,WARNING,profitandloss,295,CANBK,Mar 2019,opm_percentage,OPM mismatch,Expected 56.73
+DQ-05,WARNING,profitandloss,296,CANBK,Mar 2020,opm_percentage,OPM mismatch,Expected 53.88
+DQ-05,WARNING,profitandloss,297,CANBK,Mar 2021,opm_percentage,OPM mismatch,Expected 61.83
+DQ-05,WARNING,profitandloss,298,CANBK,Mar 2022,opm_percentage,OPM mismatch,Expected 58.39
+DQ-05,WARNING,profitandloss,299,CANBK,Mar 2023,opm_percentage,OPM mismatch,Expected 49.80
+DQ-05,WARNING,profitandloss,300,CANBK,Mar 2024,opm_percentage,OPM mismatch,Expected 41.75
+DQ-05,WARNING,profitandloss,301,CANBK,TTM,opm_percentage,OPM mismatch,Expected 40.23
+DQ-05,WARNING,profitandloss,302,CHOLAFIN,Mar 2013,opm_percentage,OPM mismatch,Expected 26.77
+DQ-05,WARNING,profitandloss,303,CHOLAFIN,Mar 2014,opm_percentage,OPM mismatch,Expected 28.42
+DQ-05,WARNING,profitandloss,304,CHOLAFIN,Mar 2015,opm_percentage,OPM mismatch,Expected 28.56
+DQ-05,WARNING,profitandloss,305,CHOLAFIN,Mar 2016,opm_percentage,OPM mismatch,Expected 30.04
+DQ-05,WARNING,profitandloss,306,CHOLAFIN,Mar 2017,opm_percentage,OPM mismatch,Expected 28.16
+DQ-05,WARNING,profitandloss,307,CHOLAFIN,Mar 2018,opm_percentage,OPM mismatch,Expected 26.10
+DQ-05,WARNING,profitandloss,308,CHOLAFIN,Mar 2019,opm_percentage,OPM mismatch,Expected 22.96
+DQ-05,WARNING,profitandloss,309,CHOLAFIN,Mar 2020,opm_percentage,OPM mismatch,Expected 27.79
+DQ-05,WARNING,profitandloss,310,CHOLAFIN,Mar 2021,opm_percentage,OPM mismatch,Expected 30.40
+DQ-05,WARNING,profitandloss,311,CHOLAFIN,Mar 2022,opm_percentage,OPM mismatch,Expected 28.83
+DQ-05,WARNING,profitandloss,312,CHOLAFIN,Mar 2023,opm_percentage,OPM mismatch,Expected 28.10
+DQ-05,WARNING,profitandloss,313,CHOLAFIN,Mar 2024,opm_percentage,OPM mismatch,Expected 28.10
+DQ-05,WARNING,profitandloss,314,CHOLAFIN,TTM,opm_percentage,OPM mismatch,Expected 28.67
+DQ-05,WARNING,profitandloss,315,CIPLA,Mar 2013,opm_percentage,OPM mismatch,Expected 73.26
+DQ-05,WARNING,profitandloss,316,CIPLA,Mar 2014,opm_percentage,OPM mismatch,Expected 78.90
+DQ-05,WARNING,profitandloss,317,CIPLA,Mar 2015,opm_percentage,OPM mismatch,Expected 80.94
+DQ-05,WARNING,profitandloss,318,CIPLA,Mar 2016,opm_percentage,OPM mismatch,Expected 82.02
+DQ-05,WARNING,profitandloss,319,CIPLA,Mar 2017,opm_percentage,OPM mismatch,Expected 82.66
+DQ-05,WARNING,profitandloss,320,CIPLA,Mar 2018,opm_percentage,OPM mismatch,Expected 81.35
+DQ-05,WARNING,profitandloss,321,CIPLA,Mar 2019,opm_percentage,OPM mismatch,Expected 81.07
+DQ-05,WARNING,profitandloss,322,CIPLA,Mar 2020,opm_percentage,OPM mismatch,Expected 81.29
+DQ-05,WARNING,profitandloss,323,CIPLA,Mar 2021,opm_percentage,OPM mismatch,Expected 77.80
+DQ-05,WARNING,profitandloss,324,CIPLA,Mar 2022,opm_percentage,OPM mismatch,Expected 79.08
+DQ-05,WARNING,profitandloss,325,CIPLA,Mar 2023,opm_percentage,OPM mismatch,Expected 77.91
+DQ-05,WARNING,profitandloss,326,CIPLA,Mar 2024,opm_percentage,OPM mismatch,Expected 75.59
+DQ-05,WARNING,profitandloss,327,CIPLA,TTM,opm_percentage,OPM mismatch,Expected 74.40
+DQ-05,WARNING,profitandloss,328,COALINDIA,Mar 2013,opm_percentage,OPM mismatch,Expected 73.52
+DQ-05,WARNING,profitandloss,329,COALINDIA,Mar 2014,opm_percentage,OPM mismatch,Expected 74.84
+DQ-05,WARNING,profitandloss,330,COALINDIA,Mar 2015,opm_percentage,OPM mismatch,Expected 76.60
+DQ-05,WARNING,profitandloss,331,COALINDIA,Mar 2016,opm_percentage,OPM mismatch,Expected 75.96
+DQ-05,WARNING,profitandloss,332,COALINDIA,Mar 2017,opm_percentage,OPM mismatch,Expected 84.07
+DQ-05,WARNING,profitandloss,333,COALINDIA,Mar 2018,opm_percentage,OPM mismatch,Expected 89.10
+DQ-05,WARNING,profitandloss,334,COALINDIA,Mar 2019,opm_percentage,OPM mismatch,Expected 74.89
+DQ-05,WARNING,profitandloss,335,COALINDIA,Mar 2020,opm_percentage,OPM mismatch,Expected 77.54
+DQ-05,WARNING,profitandloss,336,COALINDIA,Mar 2021,opm_percentage,OPM mismatch,Expected 79.31
+DQ-05,WARNING,profitandloss,337,COALINDIA,Mar 2022,opm_percentage,OPM mismatch,Expected 77.47
+DQ-05,WARNING,profitandloss,338,COALINDIA,Mar 2023,opm_percentage,OPM mismatch,Expected 68.01
+DQ-05,WARNING,profitandloss,339,COALINDIA,Mar 2024,opm_percentage,OPM mismatch,Expected 66.29
+DQ-05,WARNING,profitandloss,340,COALINDIA,TTM,opm_percentage,OPM mismatch,Expected 66.78
+DQ-05,WARNING,profitandloss,497,HDFCBANK,Mar 2013,opm_percentage,OPM mismatch,Expected 35.22
+DQ-05,WARNING,profitandloss,498,HDFCBANK,Mar 2014,opm_percentage,OPM mismatch,Expected 31.74
+DQ-05,WARNING,profitandloss,499,HDFCBANK,Mar 2015,opm_percentage,OPM mismatch,Expected 31.90
+DQ-05,WARNING,profitandloss,500,HDFCBANK,Mar 2016,opm_percentage,OPM mismatch,Expected 31.75
+DQ-05,WARNING,profitandloss,501,HDFCBANK,Mar 2017,opm_percentage,OPM mismatch,Expected 32.56
+DQ-05,WARNING,profitandloss,502,HDFCBANK,Mar 2018,opm_percentage,OPM mismatch,Expected 34.63
+DQ-05,WARNING,profitandloss,503,HDFCBANK,Mar 2019,opm_percentage,OPM mismatch,Expected 33.15
+DQ-05,WARNING,profitandloss,504,HDFCBANK,Mar 2020,opm_percentage,OPM mismatch,Expected 37.20
+DQ-05,WARNING,profitandloss,505,HDFCBANK,Mar 2021,opm_percentage,OPM mismatch,Expected 40.81
+DQ-05,WARNING,profitandloss,506,HDFCBANK,Mar 2022,opm_percentage,OPM mismatch,Expected 41.61
+DQ-05,WARNING,profitandloss,507,HDFCBANK,Mar 2023,opm_percentage,OPM mismatch,Expected 36.92
+DQ-05,WARNING,profitandloss,508,HDFCBANK,Mar 2024,opm_percentage,OPM mismatch,Expected 61.41
+DQ-05,WARNING,profitandloss,509,HDFCBANK,TTM,opm_percentage,OPM mismatch,Expected 62.61
+DQ-05,WARNING,profitandloss,510,HDFCLIFE,Mar 2013,opm_percentage,OPM mismatch,Expected 96.27
+DQ-05,WARNING,profitandloss,511,HDFCLIFE,Mar 2014,opm_percentage,OPM mismatch,Expected 96.48
+DQ-05,WARNING,profitandloss,512,HDFCLIFE,Mar 2015,opm_percentage,OPM mismatch,Expected 96.79
+DQ-05,WARNING,profitandloss,513,HDFCLIFE,Mar 2016,opm_percentage,OPM mismatch,Expected 94.74
+DQ-05,WARNING,profitandloss,514,HDFCLIFE,Mar 2017,opm_percentage,OPM mismatch,Expected 96.83
+DQ-05,WARNING,profitandloss,515,HDFCLIFE,Mar 2018,opm_percentage,OPM mismatch,Expected 96.67
+DQ-05,WARNING,profitandloss,516,HDFCLIFE,Mar 2019,opm_percentage,OPM mismatch,Expected 96.87
+DQ-05,WARNING,profitandloss,517,HDFCLIFE,Mar 2020,opm_percentage,OPM mismatch,Expected 96.12
+DQ-05,WARNING,profitandloss,518,HDFCLIFE,Mar 2021,opm_percentage,OPM mismatch,Expected 98.27
+DQ-05,WARNING,profitandloss,519,HDFCLIFE,Mar 2022,opm_percentage,OPM mismatch,Expected 98.84
+DQ-05,WARNING,profitandloss,520,HDFCLIFE,Mar 2023,opm_percentage,OPM mismatch,Expected 99.89
+DQ-05,WARNING,profitandloss,521,HDFCLIFE,Mar 2024,opm_percentage,OPM mismatch,Expected 99.48
+DQ-05,WARNING,profitandloss,522,HDFCLIFE,TTM,opm_percentage,OPM mismatch,Expected 99.28
+DQ-05,WARNING,profitandloss,523,HEROMOTOCO,Mar 2014,opm_percentage,OPM mismatch,Expected 85.94
+DQ-05,WARNING,profitandloss,524,HEROMOTOCO,Mar 2015,opm_percentage,OPM mismatch,Expected 87.22
+DQ-05,WARNING,profitandloss,525,HEROMOTOCO,Mar 2016,opm_percentage,OPM mismatch,Expected 84.45
+DQ-05,WARNING,profitandloss,526,HEROMOTOCO,Mar 2017,opm_percentage,OPM mismatch,Expected 83.97
+DQ-05,WARNING,profitandloss,527,HEROMOTOCO,Mar 2018,opm_percentage,OPM mismatch,Expected 83.57
+DQ-05,WARNING,profitandloss,528,HEROMOTOCO,Mar 2019,opm_percentage,OPM mismatch,Expected 85.21
+DQ-05,WARNING,profitandloss,529,HEROMOTOCO,Mar 2020,opm_percentage,OPM mismatch,Expected 86.09
+DQ-05,WARNING,profitandloss,530,HEROMOTOCO,Mar 2021,opm_percentage,OPM mismatch,Expected 86.90
+DQ-05,WARNING,profitandloss,531,HEROMOTOCO,Mar 2022,opm_percentage,OPM mismatch,Expected 88.98
+DQ-05,WARNING,profitandloss,532,HEROMOTOCO,Mar 2023,opm_percentage,OPM mismatch,Expected 88.00
+DQ-05,WARNING,profitandloss,533,HEROMOTOCO,Mar 2024,opm_percentage,OPM mismatch,Expected 86.15
+DQ-05,WARNING,profitandloss,534,HEROMOTOCO,TTM,opm_percentage,OPM mismatch,Expected 86.13
+DQ-05,WARNING,profitandloss,535,HINDALCO,Mar 2013,opm_percentage,OPM mismatch,Expected 90.40
+DQ-05,WARNING,profitandloss,536,HINDALCO,Mar 2014,opm_percentage,OPM mismatch,Expected 90.85
+DQ-05,WARNING,profitandloss,537,HINDALCO,Mar 2015,opm_percentage,OPM mismatch,Expected 91.52
+DQ-05,WARNING,profitandloss,538,HINDALCO,Mar 2016,opm_percentage,OPM mismatch,Expected 92.12
+DQ-05,WARNING,profitandloss,539,HINDALCO,Mar 2017,opm_percentage,OPM mismatch,Expected 87.71
+DQ-05,WARNING,profitandloss,540,HINDALCO,Mar 2018,opm_percentage,OPM mismatch,Expected 88.11
+DQ-05,WARNING,profitandloss,541,HINDALCO,Mar 2019,opm_percentage,OPM mismatch,Expected 88.12
+DQ-05,WARNING,profitandloss,542,HINDALCO,Mar 2020,opm_percentage,OPM mismatch,Expected 87.89
+DQ-05,WARNING,profitandloss,543,HINDALCO,Mar 2021,opm_percentage,OPM mismatch,Expected 86.70
+DQ-05,WARNING,profitandloss,544,HINDALCO,Mar 2022,opm_percentage,OPM mismatch,Expected 85.47
+DQ-05,WARNING,profitandloss,545,HINDALCO,Mar 2023,opm_percentage,OPM mismatch,Expected 89.85
+DQ-05,WARNING,profitandloss,546,HINDALCO,Mar 2024,opm_percentage,OPM mismatch,Expected 88.95
+DQ-05,WARNING,profitandloss,547,HINDALCO,TTM,opm_percentage,OPM mismatch,Expected 87.53
+DQ-05,WARNING,profitandloss,548,HINDUNILVR,Mar 2013,opm_percentage,OPM mismatch,Expected 84.37
+DQ-05,WARNING,profitandloss,549,HINDUNILVR,Mar 2014,opm_percentage,OPM mismatch,Expected 83.72
+DQ-05,WARNING,profitandloss,550,HINDUNILVR,Mar 2015,opm_percentage,OPM mismatch,Expected 83.07
+DQ-05,WARNING,profitandloss,551,HINDUNILVR,Mar 2016,opm_percentage,OPM mismatch,Expected 81.64
+DQ-05,WARNING,profitandloss,552,HINDUNILVR,Mar 2017,opm_percentage,OPM mismatch,Expected 80.92
+DQ-05,WARNING,profitandloss,553,HINDUNILVR,Mar 2018,opm_percentage,OPM mismatch,Expected 78.90
+DQ-05,WARNING,profitandloss,554,HINDUNILVR,Mar 2019,opm_percentage,OPM mismatch,Expected 77.41
+DQ-05,WARNING,profitandloss,555,HINDUNILVR,Mar 2020,opm_percentage,OPM mismatch,Expected 75.21
+DQ-05,WARNING,profitandloss,556,HINDUNILVR,Mar 2021,opm_percentage,OPM mismatch,Expected 75.28
+DQ-05,WARNING,profitandloss,557,HINDUNILVR,Mar 2022,opm_percentage,OPM mismatch,Expected 75.49
+DQ-05,WARNING,profitandloss,558,HINDUNILVR,Mar 2023,opm_percentage,OPM mismatch,Expected 76.65
+DQ-05,WARNING,profitandloss,559,HINDUNILVR,Mar 2024,opm_percentage,OPM mismatch,Expected 76.32
+DQ-05,WARNING,profitandloss,560,HINDUNILVR,TTM,opm_percentage,OPM mismatch,Expected 76.45
+DQ-05,WARNING,profitandloss,561,ICICIBANK,Mar 2013,opm_percentage,OPM mismatch,Expected 70.59
+DQ-05,WARNING,profitandloss,562,ICICIBANK,Mar 2014,opm_percentage,OPM mismatch,Expected 66.40
+DQ-05,WARNING,profitandloss,563,ICICIBANK,Mar 2015,opm_percentage,OPM mismatch,Expected 70.53
+DQ-05,WARNING,profitandloss,564,ICICIBANK,Mar 2016,opm_percentage,OPM mismatch,Expected 88.12
+DQ-05,WARNING,profitandloss,565,ICICIBANK,Mar 2017,opm_percentage,OPM mismatch,Expected 104.76
+DQ-05,WARNING,profitandloss,566,ICICIBANK,Mar 2018,opm_percentage,OPM mismatch,Expected 117.12
+DQ-05,WARNING,profitandloss,567,ICICIBANK,Mar 2019,opm_percentage,OPM mismatch,Expected 116.38
+DQ-05,WARNING,profitandloss,568,ICICIBANK,Mar 2020,opm_percentage,OPM mismatch,Expected 100.62
+DQ-05,WARNING,profitandloss,569,ICICIBANK,Mar 2021,opm_percentage,OPM mismatch,Expected 102.41
+DQ-05,WARNING,profitandloss,570,ICICIBANK,Mar 2022,opm_percentage,OPM mismatch,Expected 84.69
+DQ-05,WARNING,profitandloss,571,ICICIBANK,Mar 2023,opm_percentage,OPM mismatch,Expected 72.57
+DQ-05,WARNING,profitandloss,572,ICICIBANK,Mar 2024,opm_percentage,OPM mismatch,Expected 62.41
+DQ-05,WARNING,profitandloss,573,ICICIBANK,TTM,opm_percentage,OPM mismatch,Expected 69.63
+DQ-05,WARNING,profitandloss,574,ICICIGI,Mar 2013,opm_percentage,OPM mismatch,Expected 104.46
+DQ-05,WARNING,profitandloss,575,ICICIGI,Mar 2014,opm_percentage,OPM mismatch,Expected 105.19
+DQ-05,WARNING,profitandloss,576,ICICIGI,Mar 2015,opm_percentage,OPM mismatch,Expected 105.24
+DQ-05,WARNING,profitandloss,577,ICICIGI,Mar 2016,opm_percentage,OPM mismatch,Expected 87.34
+DQ-05,WARNING,profitandloss,578,ICICIGI,Mar 2017,opm_percentage,OPM mismatch,Expected 87.78
+DQ-05,WARNING,profitandloss,579,ICICIGI,Mar 2018,opm_percentage,OPM mismatch,Expected 103.79
+DQ-05,WARNING,profitandloss,580,ICICIGI,Mar 2019,opm_percentage,OPM mismatch,Expected 85.05
+DQ-05,WARNING,profitandloss,581,ICICIGI,Mar 2020,opm_percentage,OPM mismatch,Expected 84.61
+DQ-05,WARNING,profitandloss,582,ICICIGI,Mar 2021,opm_percentage,OPM mismatch,Expected 82.97
+DQ-05,WARNING,profitandloss,583,ICICIGI,Mar 2022,opm_percentage,OPM mismatch,Expected 93.66
+DQ-05,WARNING,profitandloss,584,ICICIGI,Mar 2023,opm_percentage,OPM mismatch,Expected 92.93
+DQ-05,WARNING,profitandloss,585,ICICIGI,Mar 2024,opm_percentage,OPM mismatch,Expected 87.42
+DQ-05,WARNING,profitandloss,586,ICICIGI,TTM,opm_percentage,OPM mismatch,Expected 85.57
+DQ-05,WARNING,profitandloss,587,ICICIPRULI,Mar 2013,opm_percentage,OPM mismatch,Expected 96.28
+DQ-05,WARNING,profitandloss,588,ICICIPRULI,Mar 2014,opm_percentage,OPM mismatch,Expected 93.13
+DQ-05,WARNING,profitandloss,589,ICICIPRULI,Mar 2015,opm_percentage,OPM mismatch,Expected 95.20
+DQ-05,WARNING,profitandloss,590,ICICIPRULI,Mar 2016,opm_percentage,OPM mismatch,Expected 91.17
+DQ-05,WARNING,profitandloss,591,ICICIPRULI,Mar 2017,opm_percentage,OPM mismatch,Expected 95.22
+DQ-05,WARNING,profitandloss,592,ICICIPRULI,Mar 2018,opm_percentage,OPM mismatch,Expected 95.44
+DQ-05,WARNING,profitandloss,593,ICICIPRULI,Mar 2019,opm_percentage,OPM mismatch,Expected 98.70
+DQ-05,WARNING,profitandloss,594,ICICIPRULI,Mar 2020,opm_percentage,OPM mismatch,Expected 101.52
+DQ-05,WARNING,profitandloss,595,ICICIPRULI,Mar 2021,opm_percentage,OPM mismatch,Expected 100.47
+DQ-05,WARNING,profitandloss,596,ICICIPRULI,Mar 2022,opm_percentage,OPM mismatch,Expected 103.40
+DQ-05,WARNING,profitandloss,597,ICICIPRULI,Mar 2023,opm_percentage,OPM mismatch,Expected 103.48
+DQ-05,WARNING,profitandloss,598,ICICIPRULI,Mar 2024,opm_percentage,OPM mismatch,Expected 102.03
+DQ-05,WARNING,profitandloss,599,ICICIPRULI,TTM,opm_percentage,OPM mismatch,Expected 99.59
+DQ-05,WARNING,profitandloss,1265,INDIGO,Mar 2013,opm_percentage,OPM mismatch,Expected 90.71
+DQ-05,WARNING,profitandloss,1266,INDIGO,Mar 2014,opm_percentage,OPM mismatch,Expected 96.11
+DQ-05,WARNING,profitandloss,1267,INDIGO,Mar 2015,opm_percentage,OPM mismatch,Expected 86.33
+DQ-05,WARNING,profitandloss,1268,INDIGO,Mar 2016,opm_percentage,OPM mismatch,Expected 80.40
+DQ-05,WARNING,profitandloss,1269,INDIGO,Mar 2017,opm_percentage,OPM mismatch,Expected 88.06
+DQ-05,WARNING,profitandloss,1270,INDIGO,Mar 2018,opm_percentage,OPM mismatch,Expected 86.84
+DQ-05,WARNING,profitandloss,1271,INDIGO,Mar 2019,opm_percentage,OPM mismatch,Expected 100.53
+DQ-05,WARNING,profitandloss,1272,INDIGO,Mar 2020,opm_percentage,OPM mismatch,Expected 88.62
+DQ-05,WARNING,profitandloss,1273,INDIGO,Mar 2021,opm_percentage,OPM mismatch,Expected 99.98
+DQ-05,WARNING,profitandloss,1274,INDIGO,Mar 2022,opm_percentage,OPM mismatch,Expected 97.85
+DQ-05,WARNING,profitandloss,1275,INDIGO,Mar 2023,opm_percentage,OPM mismatch,Expected 88.02
+DQ-05,WARNING,profitandloss,1276,INDIGO,Mar 2024,opm_percentage,OPM mismatch,Expected 76.30
+DQ-05,WARNING,profitandloss,1277,INDIGO,TTM,opm_percentage,OPM mismatch,Expected 79.20
+DQ-05,WARNING,profitandloss,600,INDUSINDBK,Mar 2013,opm_percentage,OPM mismatch,Expected 27.88
+DQ-05,WARNING,profitandloss,601,INDUSINDBK,Mar 2014,opm_percentage,OPM mismatch,Expected 30.95
+DQ-05,WARNING,profitandloss,602,INDUSINDBK,Mar 2015,opm_percentage,OPM mismatch,Expected 32.33
+DQ-05,WARNING,profitandloss,603,INDUSINDBK,Mar 2016,opm_percentage,OPM mismatch,Expected 35.28
+DQ-05,WARNING,profitandloss,604,INDUSINDBK,Mar 2017,opm_percentage,OPM mismatch,Expected 39.46
+DQ-05,WARNING,profitandloss,605,INDUSINDBK,Mar 2018,opm_percentage,OPM mismatch,Expected 37.93
+DQ-05,WARNING,profitandloss,606,INDUSINDBK,Mar 2019,opm_percentage,OPM mismatch,Expected 41.70
+DQ-05,WARNING,profitandloss,607,INDUSINDBK,Mar 2020,opm_percentage,OPM mismatch,Expected 43.81
+DQ-05,WARNING,profitandloss,608,INDUSINDBK,Mar 2021,opm_percentage,OPM mismatch,Expected 55.16
+DQ-05,WARNING,profitandloss,609,INDUSINDBK,Mar 2022,opm_percentage,OPM mismatch,Expected 51.39
+DQ-05,WARNING,profitandloss,610,INDUSINDBK,Mar 2023,opm_percentage,OPM mismatch,Expected 42.69
+DQ-05,WARNING,profitandloss,611,INDUSINDBK,Mar 2024,opm_percentage,OPM mismatch,Expected 38.55
+DQ-05,WARNING,profitandloss,612,INDUSINDBK,TTM,opm_percentage,OPM mismatch,Expected 41.03
+DQ-05,WARNING,profitandloss,689,JIOFIN,Mar 2023,opm_percentage,OPM mismatch,Expected 86.67
+DQ-05,WARNING,profitandloss,718,KOTAKBANK,Mar 2013,opm_percentage,OPM mismatch,Expected 60.92
+DQ-05,WARNING,profitandloss,719,KOTAKBANK,Mar 2014,opm_percentage,OPM mismatch,Expected 58.84
+DQ-05,WARNING,profitandloss,720,KOTAKBANK,Mar 2015,opm_percentage,OPM mismatch,Expected 72.96
+DQ-05,WARNING,profitandloss,721,KOTAKBANK,Mar 2016,opm_percentage,OPM mismatch,Expected 56.57
+DQ-05,WARNING,profitandloss,722,KOTAKBANK,Mar 2017,opm_percentage,OPM mismatch,Expected 66.44
+DQ-05,WARNING,profitandloss,723,KOTAKBANK,Mar 2018,opm_percentage,OPM mismatch,Expected 66.87
+DQ-05,WARNING,profitandloss,724,KOTAKBANK,Mar 2019,opm_percentage,OPM mismatch,Expected 66.23
+DQ-05,WARNING,profitandloss,725,KOTAKBANK,Mar 2020,opm_percentage,OPM mismatch,Expected 67.45
+DQ-05,WARNING,profitandloss,726,KOTAKBANK,Mar 2021,opm_percentage,OPM mismatch,Expected 90.83
+DQ-05,WARNING,profitandloss,727,KOTAKBANK,Mar 2022,opm_percentage,OPM mismatch,Expected 90.98
+DQ-05,WARNING,profitandloss,728,KOTAKBANK,Mar 2023,opm_percentage,OPM mismatch,Expected 79.44
+DQ-05,WARNING,profitandloss,729,KOTAKBANK,Mar 2024,opm_percentage,OPM mismatch,Expected 83.67
+DQ-05,WARNING,profitandloss,730,KOTAKBANK,TTM,opm_percentage,OPM mismatch,Expected 79.42
+DQ-05,WARNING,profitandloss,1034,SUNPHARMA,Mar 2024,opm_percentage,OPM mismatch,Expected 26.84
+DQ-06,WARNING,profitandloss,15,ADANIENSOL,Mar 2014,sales,Sales should be positive,0.0
+DQ-11,WARNING,profitandloss,28,ADANIENT,Mar 2014,tax_percentage,Tax should be between 0 and 100,-64.0
+DQ-11,WARNING,profitandloss,40,ADANIGREEN,Mar 2017,tax_percentage,Tax should be between 0 and 100,-75.0
+DQ-11,WARNING,profitandloss,41,ADANIGREEN,Mar 2018,tax_percentage,Tax should be between 0 and 100,-35.0
+DQ-11,WARNING,profitandloss,42,ADANIGREEN,Mar 2019,tax_percentage,Tax should be between 0 and 100,-19.0
+DQ-11,WARNING,profitandloss,76,ADANIPOWER,Mar 2014,tax_percentage,Tax should be between 0 and 100,-79.0
+DQ-11,WARNING,profitandloss,78,ADANIPOWER,Mar 2016,tax_percentage,Tax should be between 0 and 100,-47.0
+DQ-11,WARNING,profitandloss,79,ADANIPOWER,Mar 2017,tax_percentage,Tax should be between 0 and 100,-1.0
+DQ-11,WARNING,profitandloss,85,ADANIPOWER,Mar 2023,tax_percentage,Tax should be between 0 and 100,-40.0
+DQ-11,WARNING,profitandloss,94,AMBUJACEM,Dec 2018,tax_percentage,Tax should be between 0 and 100,-2.0
+DQ-11,WARNING,profitandloss,153,AXISBANK,Mar 2018,tax_percentage,Tax should be between 0 and 100,-99.0
+DQ-11,WARNING,profitandloss,201,BANKBARODA,Mar 2016,tax_percentage,Tax should be between 0 and 100,-19.0
+DQ-11,WARNING,profitandloss,203,BANKBARODA,Mar 2018,tax_percentage,Tax should be between 0 and 100,-9.0
+DQ-11,WARNING,profitandloss,205,BANKBARODA,Mar 2020,tax_percentage,Tax should be between 0 and 100,-99.0
+DQ-11,WARNING,profitandloss,217,BHARTIARTL,Mar 2019,tax_percentage,Tax should be between 0 and 100,-99.0
+DQ-11,WARNING,profitandloss,218,BHARTIARTL,Mar 2020,tax_percentage,Tax should be between 0 and 100,-28.0
+DQ-11,WARNING,profitandloss,240,BHEL,Mar 2016,tax_percentage,Tax should be between 0 and 100,-39.0
+DQ-11,WARNING,profitandloss,245,BHEL,Mar 2021,tax_percentage,Tax should be between 0 and 100,-25.0
+DQ-11,WARNING,profitandloss,248,BHEL,Mar 2024,tax_percentage,Tax should be between 0 and 100,-16.0
+DQ-11,WARNING,profitandloss,292,CANBK,Mar 2016,tax_percentage,Tax should be between 0 and 100,-13.0
+DQ-11,WARNING,profitandloss,294,CANBK,Mar 2018,tax_percentage,Tax should be between 0 and 100,-36.0
+DQ-11,WARNING,profitandloss,295,CANBK,Mar 2019,tax_percentage,Tax should be between 0 and 100,-99.0
+DQ-11,WARNING,profitandloss,368,DLF,Mar 2014,tax_percentage,Tax should be between 0 and 100,-16.0
+DQ-11,WARNING,profitandloss,400,DRREDDY,Mar 2020,tax_percentage,Tax should be between 0 and 100,-7.0
+DQ-11,WARNING,profitandloss,438,GODREJCP,Mar 2019,tax_percentage,Tax should be between 0 and 100,-12.0
+DQ-11,WARNING,profitandloss,452,GRASIM,Mar 2020,tax_percentage,Tax should be between 0 and 100,-1.0
+DQ-11,WARNING,profitandloss,521,HDFCLIFE,Mar 2024,tax_percentage,Tax should be between 0 and 100,-61.0
+DQ-11,WARNING,profitandloss,1271,INDIGO,Mar 2019,tax_percentage,Tax should be between 0 and 100,-99.0
+DQ-11,WARNING,profitandloss,1272,INDIGO,Mar 2020,tax_percentage,Tax should be between 0 and 100,-10.0
+DQ-11,WARNING,profitandloss,1276,INDIGO,Mar 2024,tax_percentage,Tax should be between 0 and 100,-2.0
+DQ-11,WARNING,profitandloss,633,IOC,Mar 2020,tax_percentage,Tax should be between 0 and 100,-74.0
+DQ-11,WARNING,profitandloss,678,JINDALSTEL,Mar 2015,tax_percentage,Tax should be between 0 and 100,-6.0
+DQ-11,WARNING,profitandloss,679,JINDALSTEL,Mar 2016,tax_percentage,Tax should be between 0 and 100,-22.0
+DQ-11,WARNING,profitandloss,680,JINDALSTEL,Mar 2017,tax_percentage,Tax should be between 0 and 100,-17.0
+DQ-11,WARNING,profitandloss,681,JINDALSTEL,Mar 2018,tax_percentage,Tax should be between 0 and 100,-13.0
+DQ-11,WARNING,profitandloss,682,JINDALSTEL,Mar 2019,tax_percentage,Tax should be between 0 and 100,-14.0
+DQ-11,WARNING,profitandloss,708,JSWSTEEL,Mar 2016,tax_percentage,Tax should be between 0 and 100,-80.0
+DQ-11,WARNING,profitandloss,712,JSWSTEEL,Mar 2020,tax_percentage,Tax should be between 0 and 100,-30.0
+DQ-11,WARNING,profitandloss,746,LODHA,Mar 2021,tax_percentage,Tax should be between 0 and 100,-44.0
+DQ-11,WARNING,profitandloss,748,LODHA,Mar 2023,tax_percentage,Tax should be between 0 and 100,-8.0
+DQ-11,WARNING,profitandloss,810,MOTHERSON,Mar 2020,tax_percentage,Tax should be between 0 and 100,-5.0
+DQ-11,WARNING,profitandloss,849,NHPC,Mar 2020,tax_percentage,Tax should be between 0 and 100,-2.0
+DQ-11,WARNING,profitandloss,851,NHPC,Mar 2022,tax_percentage,Tax should be between 0 and 100,-17.0
+DQ-11,WARNING,profitandloss,858,NTPC,Mar 2016,tax_percentage,Tax should be between 0 and 100,-2.0
+DQ-11,WARNING,profitandloss,861,NTPC,Mar 2019,tax_percentage,Tax should be between 0 and 100,-25.0
+DQ-11,WARNING,profitandloss,910,PNB,Mar 2016,tax_percentage,Tax should be between 0 and 100,-31.0
+DQ-11,WARNING,profitandloss,912,PNB,Mar 2018,tax_percentage,Tax should be between 0 and 100,-37.0
+DQ-11,WARNING,profitandloss,913,PNB,Mar 2019,tax_percentage,Tax should be between 0 and 100,-35.0
+DQ-11,WARNING,profitandloss,926,POWERGRID,Mar 2019,tax_percentage,Tax should be between 0 and 100,-10.0
+DQ-11,WARNING,profitandloss,977,SBIN,Mar 2018,tax_percentage,Tax should be between 0 and 100,-66.0
+DQ-11,WARNING,profitandloss,987,SHREECEM,Jun 2015,tax_percentage,Tax should be between 0 and 100,-6.0
+DQ-11,WARNING,profitandloss,1055,TATAMOTORS,Mar 2019,tax_percentage,Tax should be between 0 and 100,-8.0
+DQ-11,WARNING,profitandloss,1060,TATAMOTORS,Mar 2024,tax_percentage,Tax should be between 0 and 100,-14.0
+DQ-11,WARNING,profitandloss,1082,TATASTEEL,Mar 2020,tax_percentage,Tax should be between 0 and 100,-99.0
+DQ-11,WARNING,profitandloss,1148,TRENT,Mar 2021,tax_percentage,Tax should be between 0 and 100,-12.0
+DQ-12,WARNING,profitandloss,96,AMBUJACEM,Dec 2020,dividend_payout,Dividend payout should be between 0 and 100,151.0
+DQ-12,WARNING,profitandloss,216,BHARTIARTL,Mar 2018,dividend_payout,Dividend payout should be between 0 and 100,194.0
+DQ-12,WARNING,profitandloss,217,BHARTIARTL,Mar 2019,dividend_payout,Dividend payout should be between 0 and 100,244.0
+DQ-12,WARNING,profitandloss,218,BHARTIARTL,Mar 2020,dividend_payout,Dividend payout should be between 0 and 100,-3.0
+DQ-12,WARNING,profitandloss,240,BHEL,Mar 2016,dividend_payout,Dividend payout should be between 0 and 100,-14.0
+DQ-12,WARNING,profitandloss,242,BHEL,Mar 2018,dividend_payout,Dividend payout should be between 0 and 100,151.0
+DQ-12,WARNING,profitandloss,270,BPCL,Mar 2020,dividend_payout,Dividend payout should be between 0 and 100,106.0
+DQ-12,WARNING,profitandloss,271,BPCL,Mar 2021,dividend_payout,Dividend payout should be between 0 and 100,102.0
+DQ-12,WARNING,profitandloss,284,BRITANNIA,Mar 2021,dividend_payout,Dividend payout should be between 0 and 100,204.0
+DQ-12,WARNING,profitandloss,329,COALINDIA,Mar 2014,dividend_payout,Dividend payout should be between 0 and 100,121.0
+DQ-12,WARNING,profitandloss,331,COALINDIA,Mar 2016,dividend_payout,Dividend payout should be between 0 and 100,121.0
+DQ-12,WARNING,profitandloss,332,COALINDIA,Mar 2017,dividend_payout,Dividend payout should be between 0 and 100,133.0
+DQ-12,WARNING,profitandloss,333,COALINDIA,Mar 2018,dividend_payout,Dividend payout should be between 0 and 100,146.0
+DQ-12,WARNING,profitandloss,370,DLF,Mar 2016,dividend_payout,Dividend payout should be between 0 and 100,117.0
+DQ-12,WARNING,profitandloss,374,DLF,Mar 2020,dividend_payout,Dividend payout should be between 0 and 100,-85.0
+DQ-12,WARNING,profitandloss,538,HINDALCO,Mar 2016,dividend_payout,Dividend payout should be between 0 and 100,-82.0
+DQ-12,WARNING,profitandloss,548,HINDUNILVR,Mar 2013,dividend_payout,Dividend payout should be between 0 and 100,104.0
+DQ-12,WARNING,profitandloss,556,HINDUNILVR,Mar 2021,dividend_payout,Dividend payout should be between 0 and 100,119.0
+DQ-12,WARNING,profitandloss,1271,INDIGO,Mar 2019,dividend_payout,Dividend payout should be between 0 and 100,123.0
+DQ-12,WARNING,profitandloss,633,IOC,Mar 2020,dividend_payout,Dividend payout should be between 0 and 100,-437.0
+DQ-12,WARNING,profitandloss,671,ITC,Mar 2021,dividend_payout,Dividend payout should be between 0 and 100,101.0
+DQ-12,WARNING,profitandloss,708,JSWSTEEL,Mar 2016,dividend_payout,Dividend payout should be between 0 and 100,-67.0
+DQ-12,WARNING,profitandloss,784,M&M,Mar 2020,dividend_payout,Dividend payout should be between 0 and 100,205.0
+DQ-12,WARNING,profitandloss,818,NAUKRI,Mar 2015,dividend_payout,Dividend payout should be between 0 and 100,150.0
+DQ-12,WARNING,profitandloss,820,NAUKRI,Mar 2017,dividend_payout,Dividend payout should be between 0 and 100,-230.0
+DQ-12,WARNING,profitandloss,823,NAUKRI,Mar 2020,dividend_payout,Dividend payout should be between 0 and 100,-31.0
+DQ-12,WARNING,profitandloss,826,NAUKRI,Mar 2023,dividend_payout,Dividend payout should be between 0 and 100,-228.0
+DQ-12,WARNING,profitandloss,835,NESTLEIND,Dec 2019,dividend_payout,Dividend payout should be between 0 and 100,168.0
+DQ-12,WARNING,profitandloss,910,PNB,Mar 2016,dividend_payout,Dividend payout should be between 0 and 100,-2.0
+DQ-12,WARNING,profitandloss,976,SBIN,Mar 2017,dividend_payout,Dividend payout should be between 0 and 100,859.0
+DQ-12,WARNING,profitandloss,1039,TATACONSUM,Mar 2016,dividend_payout,Dividend payout should be between 0 and 100,-999.0
+DQ-12,WARNING,profitandloss,1062,TATAPOWER,Mar 2013,dividend_payout,Dividend payout should be between 0 and 100,-319.0
+DQ-12,WARNING,profitandloss,1063,TATAPOWER,Mar 2014,dividend_payout,Dividend payout should be between 0 and 100,-114.0
+DQ-12,WARNING,profitandloss,1064,TATAPOWER,Mar 2015,dividend_payout,Dividend payout should be between 0 and 100,210.0
+DQ-12,WARNING,profitandloss,1075,TATASTEEL,Mar 2013,dividend_payout,Dividend payout should be between 0 and 100,-11.0
+DQ-12,WARNING,profitandloss,1077,TATASTEEL,Mar 2015,dividend_payout,Dividend payout should be between 0 and 100,-20.0
+DQ-12,WARNING,profitandloss,1078,TATASTEEL,Mar 2016,dividend_payout,Dividend payout should be between 0 and 100,-203.0
+DQ-12,WARNING,profitandloss,1079,TATASTEEL,Mar 2017,dividend_payout,Dividend payout should be between 0 and 100,-23.0
+DQ-12,WARNING,profitandloss,1086,TATASTEEL,Mar 2024,dividend_payout,Dividend payout should be between 0 and 100,-101.0
+DQ-12,WARNING,profitandloss,1112,TECHM,Mar 2024,dividend_payout,Dividend payout should be between 0 and 100,150.0
+DQ-12,WARNING,profitandloss,1136,TORNTPHARM,Mar 2022,dividend_payout,Dividend payout should be between 0 and 100,105.0
+DQ-12,WARNING,profitandloss,1140,TRENT,Mar 2013,dividend_payout,Dividend payout should be between 0 and 100,-87.0
+DQ-12,WARNING,profitandloss,1141,TRENT,Mar 2014,dividend_payout,Dividend payout should be between 0 and 100,-125.0
+DQ-12,WARNING,profitandloss,1148,TRENT,Mar 2021,dividend_payout,Dividend payout should be between 0 and 100,-15.0
+DQ-14,WARNING,profitandloss,784,M&M,Mar 2020,eps,EPS sign inconsistent with Loss,1.0
+DQ-14,WARNING,profitandloss,818,NAUKRI,Mar 2015,eps,EPS sign inconsistent with Loss,2.0
+DQ-14,WARNING,profitandloss,1063,TATAPOWER,Mar 2014,eps,EPS sign inconsistent with Profit,-1.0
